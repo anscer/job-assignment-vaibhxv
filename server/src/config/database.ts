@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 
+//db config
 export const connectDB = async () => {
   try {
     await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/robotics_platform');

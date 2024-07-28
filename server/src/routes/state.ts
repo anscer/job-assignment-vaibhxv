@@ -2,6 +2,8 @@ import express from 'express';
 import { isAuthenticated } from '../middleware/auth';
 import { createState, getStates, getState, updateState, deleteState } from '../controllers/stateController';
 
+
+//Routes for state(s).
 const router = express.Router();
 
 router.post('/', isAuthenticated, createState);

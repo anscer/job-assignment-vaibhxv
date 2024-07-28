@@ -12,7 +12,6 @@ dotenv.config();
 
 const app = express();
 
-// Connect to MongoDB
 connectDB();
 
 // Middleware
@@ -24,7 +23,7 @@ app.use(session({
   saveUninitialized: false,
 }));
 
-// Passport configuration
+// Passport config
 app.use(passport.initialize());
 app.use(passport.session());
 

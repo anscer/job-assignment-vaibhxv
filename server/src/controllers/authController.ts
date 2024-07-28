@@ -2,6 +2,8 @@ import { Request, Response } from 'express';
 import passport from 'passport';
 import User from '../models/User';
 
+
+//auth controller.
 export const register = async (req: Request, res: Response) => {
   try {
     const { username, password } = req.body;

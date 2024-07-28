@@ -2,6 +2,8 @@ import { Request, Response } from 'express';
 import State from '../models/State';
 import { IUser } from '../models/User';  // Import the IUser interface
 
+
+//State(s) controller.
 export const createState = async (req: Request, res: Response) => {
   try {
     const { name, description, status } = req.body;

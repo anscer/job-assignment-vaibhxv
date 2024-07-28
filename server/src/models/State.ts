@@ -1,5 +1,7 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
+
+//State(s) model
 export interface IState extends Document {
   name: string;
   description: string;
